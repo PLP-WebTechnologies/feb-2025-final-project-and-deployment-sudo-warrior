@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Mindful Musings</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">Mindful Musings</a>
+      </div>
+      <nav class="main-nav">
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><button class="theme-toggle" aria-label="Toggle dark mode">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Get In Touch</h1>
+        <p>Questions, collaborations, or just want to say hello? I'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <section class="contact-content">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Feel free to reach out using this form or through my social media channels. I typically respond within 48 hours.</p>
+            
+            <div class="info-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>hello@mindfulmusings.com</span>
+            </div>
+            <div class="info-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Portland, Oregon</span>
+            </div>
+            
+            <div class="contact-social">
+              <h3>Connect With Me</h3>
+              <ul class="social-links">
+                <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+              </ul>
+            </div>
+            
+            <div class="contact-availability">
+              <h3>Office Hours</h3>
+              <p>Monday - Friday: 9am - 5pm PST</p>
+            </div>
+          </div>
+          
+          <div class="contact-form-container">
+            <h2>Send Me a Message</h2>
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Full Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required>
+                <span class="error-message" id="name-error"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message" id="email-error"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject">
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message <span class="required">*</span></label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                <span class="error-message" id="message-error"></span>
+              </div>
+              
+              <div class="form-group">
+                <button type="submit" class="btn btn-submit">Send Message</button>
+              </div>
+              
+              <div id="form-response" class="form-response"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h3>Do you accept guest posts?</h3>
+            <p>Yes, I occasionally feature guest contributors whose work aligns with the Mindful Musings philosophy. Please use the contact form to pitch your idea before sending a complete article.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Can I hire you for writing or speaking?</h3>
+            <p>Absolutely! I'm available for freelance writing, workshops, and speaking engagements related to mindfulness, creativity, and intentional living. Please provide details about your project in your message.</p>
+          </div>
+          <div class="faq-item">
+            <h3>How can I support your work?</h3>
+            <p>The best way to support Mindful Musings is to share articles that resonate with you, join the newsletter, and engage with the community by leaving thoughtful comments.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Do you offer coaching services?</h3>
+            <p>While I don't currently offer formal coaching, I do occasionally host online workshops and courses. Subscribe to the newsletter to be the first to know about upcoming offerings.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>Mindful Musings</h3>
+          <p>Thoughts, stories, and ideas for the thoughtful explorer</p>
+        </div>
+        <div class="footer-links">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <ul class="social-links">
+            <li><a href="#" aria-label="Twitter">Twitter</a></li>
+            <li><a href="#" aria-label="Instagram">Instagram</a></li>
+            <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Mindful Musings. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

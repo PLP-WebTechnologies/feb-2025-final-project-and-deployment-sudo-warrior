@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindful Musings | Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">Mindful Musings</a>
+      </div>
+      <nav class="main-nav">
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button class="theme-toggle" aria-label="Toggle dark mode">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Welcome to Mindful Musings</h1>
+        <p>Thoughts, stories, and ideas for the thoughtful explorer</p>
+      </div>
+    </section>
+
+    <section class="recent-posts">
+      <div class="container">
+        <h2>Recent Posts</h2>
+        <div class="posts-grid">
+          <article class="post-card">
+            <div class="post-image">
+              <img src="https://images.pexels.com/photos/1252983/pexels-photo-1252983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mountain landscape">
+            </div>
+            <div class="post-content">
+              <span class="post-category">Travel</span>
+              <h3><a href="post1.html">Finding Peace in Mountain Solitude</a></h3>
+              <p>Discover how a weekend in the mountains changed my perspective on life and mindfulness.</p>
+              <div class="post-meta">
+                <span class="post-date">June 12, 2025</span>
+                <span class="post-read-time">5 min read</span>
+              </div>
+              <a href="post1.html" class="read-more">Read More</a>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="post-image">
+              <img src="https://images.pexels.com/photos/3014019/pexels-photo-3014019.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Writing journal">
+            </div>
+            <div class="post-content">
+              <span class="post-category">Creativity</span>
+              <h3><a href="post1.html">The Art of Daily Journaling</a></h3>
+              <p>How spending just 10 minutes each morning with a pen and paper transformed my creative process.</p>
+              <div class="post-meta">
+                <span class="post-date">June 8, 2025</span>
+                <span class="post-read-time">4 min read</span>
+              </div>
+              <a href="post1.html" class="read-more">Read More</a>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="post-image">
+              <img src="https://images.pexels.com/photos/1028741/pexels-photo-1028741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Morning coffee">
+            </div>
+            <div class="post-content">
+              <span class="post-category">Lifestyle</span>
+              <h3><a href="post1.html">Morning Rituals for Mindful Living</a></h3>
+              <p>Five simple practices that help me start each day with intention and purpose.</p>
+              <div class="post-meta">
+                <span class="post-date">June 1, 2025</span>
+                <span class="post-read-time">6 min read</span>
+              </div>
+              <a href="post1.html" class="read-more">Read More</a>
+            </div>
+          </article>
+        </div>
+        <div class="see-all-posts">
+          <a href="blog.html" class="btn">See All Posts</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container">
+        <h2>Join Our Newsletter</h2>
+        <p>Get weekly insights and articles delivered straight to your inbox.</p>
+        <form class="newsletter-form">
+          <div class="form-group">
+            <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+            <button type="submit" class="btn">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>Mindful Musings</h3>
+          <p>Thoughts, stories, and ideas for the thoughtful explorer</p>
+        </div>
+        <div class="footer-links">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <ul class="social-links">
+            <li><a href="#" aria-label="Twitter">Twitter</a></li>
+            <li><a href="#" aria-label="Instagram">Instagram</a></li>
+            <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Mindful Musings. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
